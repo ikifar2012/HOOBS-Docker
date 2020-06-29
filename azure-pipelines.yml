@@ -6,14 +6,14 @@
 trigger:
   - master
   
-  resources:
+resources:
   - repo: self
   
-  variables:
+variables:
     tag: 'latest'
     imageName: 'ikifar/docker-hoobs'
   
-  stages:
+stages:
   - stage: Build
     displayName: Build image
     jobs:  
