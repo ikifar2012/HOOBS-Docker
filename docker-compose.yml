@@ -1,7 +1,7 @@
 # Example Docker Compose
 version: '2'
 services:
-  haste-server:
+  hoobs:
     image: ikifar/docker-hoobs:latest
     restart: always
     ports:
