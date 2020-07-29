@@ -4,6 +4,9 @@ services:
   hoobs:
     image: ikifar/docker-hoobs:latest
     restart: always
+    volumes: 
+      - /path/to/hoobs/config/folder:/root/.hoobs
+      - path/to/node/modules:/usr/local/lib/node_modules
     ports:
       - 89:80
       - 51826:51826
